@@ -115,19 +115,7 @@ export function Footer() {
             </div>
           ))}
         </div>
-
-        {/* Divider */}
-        <div className="h-px mb-8" style={{ background: 'rgba(255,255,255,0.08)' }} />
-
-        {/* Bottom */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)', fontFamily: 'DM Sans, sans-serif' }}>
-            © {new Date().getFullYear()} Rohan Kshatri. All rights reserved.
-          </p>
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)', fontFamily: 'DM Sans, sans-serif' }}>
-            Crafted with passion in India 🇮🇳
-          </p>
-        </div>
+       
       </div>
     </footer>
   )
