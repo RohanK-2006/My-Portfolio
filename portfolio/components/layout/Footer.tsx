@@ -11,11 +11,11 @@ const footerLinks = {
     { label: 'Projects', href: '/projects' },
     { label: 'Contact', href: '/contact' },
   ],
-  Services: [
-    { label: 'Mobile Apps', href: '/services' },
-    { label: 'Web Development', href: '/services' },
-    { label: 'UI/UX Design', href: '/services' },
-    { label: 'Deployment', href: '/services' },
+  Expertise: [
+    { label: 'Mobile Apps', href: '/expertise' },
+    { label: 'Web Development', href: '/expertise' },
+    { label: 'UI/UX Design', href: '/expertise' },
+    { label: 'Deployment', href: '/expertise' },
   ],
 }
 
