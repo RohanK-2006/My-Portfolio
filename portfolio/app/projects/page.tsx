@@ -30,7 +30,7 @@ const projects = [
     ],
     category: 'Mobile App + AI',
     status: 'Live',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.rohan_kshatri.SoulFit',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.soulcord.SoulFit',
   },
   {
     id: 'careerx',
