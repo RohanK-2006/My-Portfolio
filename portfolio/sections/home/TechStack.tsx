@@ -7,6 +7,7 @@ const techStack = [
   { name: 'Next.js', color: '#000000', category: 'Web' },
   { name: 'TypeScript', color: '#3178c6', category: 'Language' },
   { name: 'Expo', color: '#3776ab', category: 'Mobile' },
+  { name: 'Git/GitHub', color: '#F05032', category: 'Tools' },
   { name: 'Firebase', color: '#ffca28', category: 'Backend' },
   { name: 'Supabase', color: '#336791', category: 'Database' },
   { name: 'TailwindCSS', color: '#06b6d4', category: 'Styling' },
@@ -14,7 +15,7 @@ const techStack = [
   { name: 'Figma', color: '#f24e1e', category: 'Design' },
   { name: 'Play Store/App Store', color: '#000000', category: 'Deploy' },
   { name: 'Cloudflare', color: '#f38020', category: 'Infra' },
-  { name: 'Vercel', color: '#000000', category: 'Deploy' },
+  { name: 'Vercel/Render', color: '#000000', category: 'Deploy' },
 ]
 
 export function TechStack() {

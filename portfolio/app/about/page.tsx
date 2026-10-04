@@ -7,30 +7,76 @@ import { Reveal } from '@/components/animations/Reveal'
 
 const timeline = [
   {
-    year: '2025',
-    title: 'The Beginning',
-    description: 'I started in 2025 with SplitMate, a simple bill-splitting app that kicked off my mobile development journey.',
+    year: 'Jun - Sept 2024',
+    title: 'Building the Foundations',
+    description:
+      'Started my development journey by strengthening the fundamentals of programming and Data Structures & Algorithms, building the problem-solving mindset that would later shape how I approached software development.',
     color: '#2563b8',
   },
   {
-    year: '2026',
-    title: 'SoulFit Launch',
-    description: 'In 2026, I built SoulFit and expanded my momentum with AI-powered product experiences.',
-    color: '#00b8b0',
+    year: 'Oct - Dec 2024',
+    title: 'Entering Web Development',
+    description:
+      'Moved from programming fundamentals into web development, learning React and then Next.js to understand modern frontend architecture, component-driven interfaces, and how complete web applications are built.',
+    color: '#61dafb',
   },
   {
-    year: '2026',
-    title: 'Web Development',
-    description: 'Transitioned into web engineering by building this very portfolio from scratch using Next.js and modern web practices.',
+    year: 'Jan - June 2025',
+    title: 'Understanding Security',
+    description:
+      'Started exploring cybersecurity fundamentals through the Google Cybersecurity Professional Certificate, developing an understanding of security practices and the standards expected in modern software systems.',
+    color: '#3b82f6',
+  },
+  {
+    year: 'Mar 2025',
+    title: 'Exploring AI',
+    description:
+      'Completed the Green Skills & Artificial Intelligence certification as AI rapidly became an essential part of modern software development, expanding my understanding of AI and its growing role in technology.',
+    color: '#22a06b',
+  },
+  {
+    year: 'Jun - Aug 2025',
+    title: 'Moving Into Mobile',
+    description:
+      'Started my transition into cross-platform mobile development through React Native and Expo, applying my existing web development knowledge to building applications for real-world mobile experiences.',
+    color: '#61dafb',
+  },
+  {
+    year: 'Nov - Dec 2025',
+    title: 'First App Shipped',
+    description:
+      'Built and shipped SplitMate, my first major mobile application, publishing it to the Google Play Store and taking my development journey from learning and experimentation to delivering a real product.',
     color: '#4a3fa0',
   },
   {
-    year: 'Now',
-    title: 'Entering the Industry',
-    description: 'Ready to enter the job market as a cross-platform developer, eager to bring my skills to a forward-thinking team.',
+    year: 'Jan - Mar 2026',
+    title: 'Going Deeper Into Backend',
+    description:
+      'Expanded my backend knowledge through Node.js, Express, and MongoDB, learning more about server-side architecture, REST APIs, databases, and the systems behind modern applications.',
+    color: '#68a063',
+  },
+  {
+    year: 'Jan 2026',
+    title: 'Microsoft Imagine Cup — CareerX',
+    description:
+      'Participated in Microsoft Imagine Cup with my team and built CareerX, an AI-powered learning roadmap platform that transforms syllabus documents into personalized, week-by-week learning plans. The project was later open sourced on GitHub.',
+    color: '#0078d4',
+  },
+  {
+    year: 'Mar - May 2026',
+    title: 'SoulFit — Full-Stack Production',
+    description:
+      'Published SoulFit, my first full end-to-end production application. Built with React Native and a serverless Cloudflare Workers + D1 backend, it introduced me to offline-first architecture, encrypted local storage, biometric security, AI-powered food scanning, personalized workouts, and reliable data synchronization.',
+    color: '#00b8b0',
+  },
+  {
+    year: 'July - Oct 2026',
+    title: 'Echoes — My Flagship',
+    description:
+      'Published Echoes into its pre-registration phase — a real-time competitive debating and reasoning platform built with React Native. It brings together AI-powered debate judging, AI Legends, real-time multiplayer with Socket.IO and WebRTC, Supabase, competitive rankings, and Google Play Billing.',
     color: '#c9a227',
   },
-]
+];
 
 const values = [
   {
@@ -139,15 +185,46 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="prose max-w-none" style={{ fontFamily: 'DM Sans, sans-serif', color: '#4a5880', lineHeight: '1.8' }}>
+            <div
+              className="prose max-w-none"
+              style={{
+                fontFamily: 'DM Sans, sans-serif',
+                color: '#4a5880',
+                lineHeight: '1.8',
+              }}
+            >
               <p className="text-base mb-6">
-                My journey as a developer is driven by a simple belief: the best software isn't just functional — it has soul. It's the kind of product that people genuinely want to use, that feels fast, intuitive, and built with intention.
+                My journey as a developer is driven by a simple belief: the best software
+                isn't just functional — it has soul. It's the kind of product that people
+                genuinely want to use, feels fast and intuitive, and is built with
+                intention from the ground up.
               </p>
+
               <p className="text-base mb-6">
-                I started my major development journey by building SplitMate, a project through which I started my mobile development journey. After that, I moved on to develop my current hero app, SoulFit mobile app, which deepened my expertise in cross-platform development.
+                I started by building a foundation across web development and software
+                engineering, then moved deeper into cross-platform mobile development
+                with React Native and Expo. Along the way, I explored cybersecurity,
+                backend development, databases, REST APIs, offline-first architecture,
+                and AI-integrated applications — gradually moving from learning
+                technologies to using them to solve real problems.
               </p>
+
+              <p className="text-base mb-6">
+                That progression led to building and independently shipping production
+                applications like SoulFit and Echoes to the Google Play Store. SoulFit
+                pushed me deeper into AI-powered features, offline synchronization,
+                security, and scalable backend systems, while Echoes became my flagship
+                project — combining AI, real-time multiplayer communication, WebRTC,
+                Socket.IO, Supabase, and competitive game mechanics into a single
+                production platform.
+              </p>
+
               <p className="text-base">
-                Now, I've built this personal portfolio from the ground up using Next.js to showcase my progression. I'm constantly learning new technologies, refining my craft, and looking forward to building the next great digital experience.
+                Today, I work across React Native, React, Next.js, TypeScript,
+                JavaScript, Node.js, Express, SQL, Supabase, and modern cloud
+                technologies. I'm constantly learning, experimenting, and refining how
+                I build — with a focus on creating software that is not only technically
+                strong, but genuinely useful and enjoyable to experience.
               </p>
             </div>
           </Reveal>

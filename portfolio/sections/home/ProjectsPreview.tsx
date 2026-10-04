@@ -2,37 +2,37 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Smartphone, Brain } from 'lucide-react'
+import { ArrowRight, Download } from 'lucide-react'
 import { Reveal } from '@/components/animations/Reveal'
 
 const projects = [
+  {
+    id: 'echoes',
+    name: 'Echoes',
+    tagline: 'Think, Debate & Rise',
+    description: 'A competitive debating and reasoning platform where players challenge AI Legends, compete in real-time online debates, sharpen their minds through Trials, and receive AI-powered debate reviews.',
+    logo: '/assets/logos/echoes-logo.png',
+    tech: ['React Native', 'Expo', 'Node.js', 'Express', 'Supabase', 'Socket.IO', 'WebRTC', 'Figma'],
+    color: '#ffd664',
+    accent: '#e7b923',
+    gradient: 'linear-gradient(135deg, #0f0d08 0%, #1f1b12 50%, #17130a 100%)',
+    bgGradient: 'linear-gradient(135deg, rgba(255,214,100,0.06) 0%, rgba(231,185,35,0.04) 100%)',
+    features: ['AI Legends', 'Real-Time Online Debates', 'Reasoning Trials', 'AI-Powered Debate Reviews'],
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.soulcord.echoes',
+  },
   {
     id: 'soulfit',
     name: 'SoulFit',
     tagline: 'AI-Powered Fitness',
     description: 'A comprehensive fitness companion with step, calorie, and hydration tracking. Features AI-based food scanning and personalized workouts, all powered by a seamless offline-sync architecture.',
     logo: '/assets/logos/soulfit-logo.png',
-    icon: Brain,
-    tech: ['React Native', 'Expo', 'Cloudflare Workers', 'D1 Database', 'Native Storage'],
+    tech: ['React Native', 'Serverless Architecture', 'Offline Sync', 'Cloudflare Workers', 'D1'],
     color: '#ff6b35',
     accent: '#ffd700',
     gradient: 'linear-gradient(135deg, #2a0a00 0%, #5c1a00 50%, #2a1500 100%)',
     bgGradient: 'linear-gradient(135deg, rgba(255,107,53,0.06) 0%, rgba(255,215,0,0.04) 100%)',
     features: ['Calories tracking with AI Food Scan', 'AI Workouts', 'Step Tracking', 'Hydration Reminders'],
-  },
-  {
-    id: 'splitmate',
-    name: 'SplitMate',
-    tagline: 'Expense Sharing, Simplified',
-    description: 'My very first mobile app, built to make group finances effortless. Features a fully offline architecture, intuitive interface, and smart calculations for easy bill splitting.',
-    logo: '/assets/logos/splitmate-logo.png',
-    icon: Smartphone,
-    tech: ['React Native', 'Expo SQLite', 'JavaScript'],
-    color: '#7b5cfa',
-    accent: '#00d4ff',
-    gradient: 'linear-gradient(135deg, #1a0a40 0%, #2d1a6e 50%, #1a4060 100%)',
-    bgGradient: 'linear-gradient(135deg, rgba(123,92,250,0.06) 0%, rgba(0,212,255,0.04) 100%)',
-    features: ['Fully Offline', 'Smart Splitting', 'Group Expenses', 'Intuitive UI'],
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.soulcord.SoulFit',
   },
 ]
 
@@ -144,21 +144,49 @@ export function ProjectsPreview() {
                       ))}
                     </div>
 
-                    <Link href={`/projects#${project.id}`}>
-                      <motion.button
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white"
-                        style={{
-                          background: `linear-gradient(135deg, ${project.color}, ${project.accent})`,
-                          boxShadow: `0 8px 25px ${project.color}30`,
-                          fontFamily: 'DM Sans, sans-serif',
-                        } as React.CSSProperties}
-                        whileHover={{ scale: 1.03, boxShadow: `0 12px 35px ${project.color}40` }}
-                        whileTap={{ scale: 0.97 }}
-                      >
-                        View Project
-                        <ArrowRight size={15} />
-                      </motion.button>
-                    </Link>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <Link href={`/projects#${project.id}`}>
+                        <motion.button
+                          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white"
+                          style={{
+                            background: `linear-gradient(135deg, ${project.color}, ${project.accent})`,
+                            boxShadow: `0 8px 25px ${project.color}30`,
+                            fontFamily: 'DM Sans, sans-serif',
+                          } as React.CSSProperties}
+                          whileHover={{
+                            scale: 1.03,
+                            boxShadow: `0 12px 35px ${project.color}40`,
+                          }}
+                          whileTap={{ scale: 0.97 }}
+                        >
+                          View Project
+                          <ArrowRight size={15} />
+                        </motion.button>
+                      </Link>
+
+                      {project.playStoreUrl && (
+                        <motion.a
+                          href={project.playStoreUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold"
+                          style={{
+                            color: '#1a2456',
+                            background: 'rgba(255,255,255,0.7)',
+                            border: '1px solid rgba(26,36,86,0.12)',
+                            fontFamily: 'DM Sans, sans-serif',
+                          }}
+                          whileHover={{
+                            scale: 1.03,
+                            background: 'rgba(255,255,255,0.95)',
+                          }}
+                          whileTap={{ scale: 0.97 }}
+                        >
+                          <Download size={15} />
+                          Google Play
+                        </motion.a>
+                      )}
+                    </div>
                   </div>
 
                   {/* Visual */}
